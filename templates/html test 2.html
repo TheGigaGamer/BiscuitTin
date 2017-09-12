@@ -1,0 +1,44 @@
+<html>
+<!DOCTYPE html>
+<head>
+<title>Test Site</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="container">
+    <form action="saveminutes" method="get" class="form-horizontal">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+
+                            <input type="number" class="form-control" placeholder="Minutes" aria-describedby="basic-addon1" value="{{time}}" name="minutes" />
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-success">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </button>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">No. of biscuits illegally removed:</div>
+                    <div class="panel-body">0</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Time since last opened:</div>
+                    <div class="panel-body">0:00</div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
