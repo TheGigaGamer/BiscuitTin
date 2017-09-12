@@ -19,9 +19,6 @@ def hello():
 def test():
     return render_template("html test.html", time=time)
 
-@app.route("/bad")
-def warning_site():
-    
 
 @app.route("/saveminutes", methods=["GET"])
 def saveminutes():
